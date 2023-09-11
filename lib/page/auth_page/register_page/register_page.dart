@@ -55,70 +55,6 @@ class _RegisterPageState extends State<RegisterPage> {
             ),
           ),
           Positioned(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(top: 50, left: 20),
-                      child: GestureDetector(
-                        onTap: () {
-                          auth.clear();
-                          Get.back();
-                        },
-                        child: const ClipOval(
-                          child: Material(
-                            color: Colors.white, // Button color
-                            child: SizedBox(
-                              width: 32,
-                              height: 32,
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Padding(
-                                    padding: EdgeInsets.only(left: 7.0),
-                                    child: Icon(
-                                      Icons.arrow_back_ios,
-                                      size: 17,
-                                      color: Colors.black,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(
-                  height: 15,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        const Text(
-                          "Daftar Akun",
-                        ).p20b().white(),
-                      ],
-                    )
-                  ],
-                ),
-              ],
-            ),
-          ),
-          Positioned(
             left: -14,
             child: SizedBox(
               child: SingleChildScrollView(
@@ -365,6 +301,70 @@ class _RegisterPageState extends State<RegisterPage> {
                   ],
                 ),
               ),
+            ),
+          ),
+          Positioned(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(top: 50, left: 20),
+                      child: GestureDetector(
+                        onTap: () {
+                          auth.clear();
+                          Get.back();
+                        },
+                        child: const ClipOval(
+                          child: Material(
+                            color: Colors.white, // Button color
+                            child: SizedBox(
+                              width: 32,
+                              height: 32,
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsets.only(left: 7.0),
+                                    child: Icon(
+                                      Icons.arrow_back_ios,
+                                      size: 17,
+                                      color: Colors.black,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 15,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        const Text(
+                          "Daftar Akun",
+                        ).p20b().white(),
+                      ],
+                    )
+                  ],
+                ),
+              ],
             ),
           ),
         ],

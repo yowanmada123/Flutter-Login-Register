@@ -60,7 +60,7 @@ class AuthController extends GetxController {
         ),
       );
       clear();
-      Get.off(
+      Get.offAll(
         const HomePage(),
       );
     } else if (response.statusCode == 400 || response.statusCode == 404) {
